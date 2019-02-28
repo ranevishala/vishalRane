@@ -1,6 +1,6 @@
 from selenium import webdriver
-
-
+from selenium.webdriver.common.action_chains import ActionChains
+import time
 class CompanyInfo:
 
 
@@ -14,4 +14,8 @@ companyList=driver.find_element_by_class_name('directory-list').find_elements_by
 print('total Companies', len(companyList))
 
 for index,company in enumerate(companyList):
-    print(company.find_element_by_class_name('nav').find_element_by_class_name('contact-dropdown').find_element_by_class_name('item').text)
+    action = ActionChains(driver)
+    action.move_to_element(company.find_element_by_class_name('nav').find_element_by_class_name('contact').click())
+
+    time.sleep(1)
+    print(company.find_element_by_tag_name('a').text) #find_element_by_tag_name('a').text)
