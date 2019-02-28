@@ -18,4 +18,9 @@ for index,company in enumerate(companyList):
     action.move_to_element(company.find_element_by_class_name('nav').find_element_by_class_name('contact').click())
 
     time.sleep(1)
-    print(company.find_element_by_tag_name('a').text) #find_element_by_tag_name('a').text)
+    print(company.find_element_by_tag_name('a').text) 
+    
+    # ithparynat pohochto aahe aata pan contact information print nahi karta yet aahe. 
+    #<a id="KtGhkevAy" rel="nofollow" href="mailto:paul@gigantevaz.com">paul@gigantevaz.com</a>
+    
+    #  ya varil line madhe rel kay ahe??? means tag name tar nahiye. mag as name consider karu shakto ka?
