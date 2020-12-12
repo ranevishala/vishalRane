@@ -20,4 +20,6 @@ lis.pop(3)
 
 print('\n', dir(list))
 
-dir([lis])
+
+
+print("v")
