@@ -22,3 +22,4 @@ print('\n', dir(list))
 
 print("v")
 print("massage")
+list = [1,3]
