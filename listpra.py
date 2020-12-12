@@ -21,4 +21,4 @@ lis.pop(3)
 print('\n', dir(list))
 
 print("v")
-print("r")
+print("massage")
